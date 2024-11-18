@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/html/bootstrap/section.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Service page</title>
+        <!-- Required meta tags -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="./Service page_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            body{
+                background-color: #52606d;
+                color: #9aa5b1;
+            }
+            
+            
+            .box{
+                border-radius: 10px;
+                padding: 3vh;
+                margin: 2vh;
+                background-color: #323f4b;
+            }
+
+            img{
+                height: 60px;
+                color: #cced00;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #9aa5b1 ;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+        
+        </header>
+        <main>
+            <div class="container text-light mt-3">
+                <p class="fw-bold" style="color:#cced00">Services</p>
+                <h2 class="mb-3 fw-bold text-light">What I do</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box shadow-lg ">
+                        <img src="./Service page_files/portfolio-web-design-img.png" alt="htmlimg">
+                        <h5>Static Websites</h5>
+                        <p>A Statics Website contains Web pages with fixed content.Each page is developed using HTML and CSS and displays the same information to every visitor</p>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-12 box shadow-lg">
+                        <img src="./Service page_files/portfolio-web-development-img.png" alt="res web">
+                        <h5>Responsive Web design</h5>
+                        <p>Responsive web design is the approach that suggests thst design and development should respond to the user's behaviour and environment based on screen size,platform and orientation.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 box shadow-lg">
+                        <img src="./Service page_files/portfolio-customize-img.png" alt="noimg">
+                        <h5>Customisable Layouts</h5>
+                        <p>Customisable sites are templates with set layouts. y=You may be able to change photos and colors, but your site will look similar to many other site due to template. The same goes for...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+      
+        <script src="./Service page_files/popper.min.js.download" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <script src="./Service page_files/bootstrap.min.js.download" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

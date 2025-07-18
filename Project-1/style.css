@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: #f5f8ff;
+}
+
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+#search-container{
+      margin: 1em 0;
+}
+
+#search-container input{
+    width: 75%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    background-color: transparent;
+}
+
+#search-container input:focus{
+    border-color: #9c97d4;
+    box-shadow: 0 0 5px rgba(156, 151, 212, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+#search-container button{
+    width: 80px;
+    height: 30px;
+    background-color: thistle;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#search-container button:hover{
+    background-color: lightgreen;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#buttons button{
+    border: 2px solid #9c97d4;
+    padding: 8px;
+    width: 85px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+#buttons button:hover{
+    background-color: #9c97d4;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.active{
+    background-color: #6759ff;
+    color: #ffffff;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+}
+
+.card{
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1,2, 68, 0.08);
+}
+
+.image-container{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+    cursor: pointer;
+}
+
+.container{
+    padding-top:10px;
+    color: #110f29;
+}
+.container h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hide{
+    display: none;
+}
+
+
+@media screen and (max-width: 720px){
+    img{
+        max-width: 100%;
+        height: 10em;
+        object-fit: contain;
+    }
+
+    .card{
+        max-width: 10em;
+        margin-top: 1em;
+    }
+    #products{
+        grid-template-columns: auto auto ;
+        grid-column-gap: 1em;
+    }
+
+    .container .product-name{
+        font-size: 10px;
+    }
+
+    #buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+        width: auto;
+    }
+
+
+    
+}
+
+
